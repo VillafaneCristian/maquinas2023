@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+
+.header-hijo-superior{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header-hijo-inferior{
+    background-color: #2382F1;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.header-hijo-superior-izquierda-escudo{
+    width: 80%;
+    margin: auto;
+}
+
+.header-hijo-superior-izquierda{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-hijo-superior-izquierda-titulos{
+    display: none;
+}
+
+.header-hijo-superior-derecha{
+    display: none;
+}
+
+.header-hijo-superior-derecha{
+    display: none;
+}
+
+.header-hijo-inferior{
+    display: none;
+}
+
+.hamburgueza{
+    font-size: 30px;
+    padding: 10px;
+}
+
+.hamburgueza-contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media(min-width: 481px){
+
+   
+
+}
+
+@media(min-width: 769px){
+
+    .header-hijo-superior{
+        justify-content: space-around;
+    }
+
+    .header-hijo-superior-derecha button{
+
+        margin: 10px;
+        background-color: #2382F1;
+        padding: 10px;
+        border-radius: 25px;
+        color: #FFFFFF;
+    }
+
+    .header-hijo-superior-izquierda-escudo{
+        width: 200px;
+    }
+
+    .hamburgueza-contenedor{
+        display: none;
+    }
+
+    .header-hijo-superior-izquierda-titulos{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .titulos{
+        margin: 5px 0;
+    }
+    
+    .header-hijo-superior-izquierda{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .header-hijo-superior-derecha{
+        display: flex;
+        align-items: center;
+    }
+    
+    .header-hijo-inferior{
+        display: block;
+    }
+
+    .header-hijo-inferior-navegacion-listado{
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-hijo-inferior-navegacion-listado li{
+        margin: 20px;
+        padding: 0 20px;
+        list-style: none;
+    }
+}
+
+
+@media(min-width: 1280px){
+   
+}

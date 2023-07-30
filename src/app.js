@@ -2,12 +2,19 @@ const express = require ('express');
 const path = require ('path');
 const app = express();
 
-
+//definimos la carpeta public como carpeta de archivos publicos.
+const publicPath = path.join(__dirname,'../public');
+app.use(express.static(publicPath));
 
 //definimos rutas
 app.get ('/',function(req,res){
     const indexPath = path.resolve(__dirname,'./views/home.html');
     res.sendFile(indexPath);
+});
+
+app.get('/incidentes/alta',function(req,res){
+    const crearIncidentesPath = path.join(__dirname,'/views/altaIncidente.html');
+    res.sendFile(crearIncidentesPath);
 });
 
 
