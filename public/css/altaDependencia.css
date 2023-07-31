@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+.main-form-contenedor{
+    max-width: 1200px;
+    padding: 10px;
+}
+
+.main-form-contenedor-label{
+    display: block;
+    width: 100%;
+}
+
+.main-form-contenedor-input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media(min-width: 820px){
+
+    .main-form-contenedor{
+        width: 75%;
+        margin: auto;
+    }
+
+}

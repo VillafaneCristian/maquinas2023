@@ -13,8 +13,13 @@ app.get ('/',function(req,res){
 });
 
 app.get('/incidentes/alta',function(req,res){
-    const crearIncidentesPath = path.join(__dirname,'/views/altaIncidente.html');
-    res.sendFile(crearIncidentesPath);
+    const altaIncidentesPath = path.join(__dirname,'/views/altaIncidente.html');
+    res.sendFile(altaIncidentesPath);
+});
+
+app.get('/dependencias/alta',function(req,res){
+    const altaDependenciasPath = path.join(__dirname,'/views/altaDependencia.html');
+    res.sendFile(altaDependenciasPath);
 });
 
 
