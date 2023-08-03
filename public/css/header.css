@@ -55,11 +55,14 @@
 
 @media(min-width: 481px){
 
-   
-
+    .header-hijo-superior-izquierda-titulos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-@media(min-width: 769px){
+@media(min-width: 820px){
 
     .header-hijo-superior{
         justify-content: space-around;

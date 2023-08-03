@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+.main-section-accesosDirectos{
+    display: none;
+    max-width: 1200px;
+    margin: auto;
+}
+
+@media(min-width: 481px){
+
+    
+}
+
+@media(min-width: 820px){
+
+    .main-section-accesosDirectos{
+
+        display: block;
+    }
+
+    .main-section-accesosDirectos-titulos{
+        margin: 20px;
+    }
+
+    .main-section-accesosDirectos-contenedor{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-section-accesosDirectos-contenedor-imagen{
+        width: 180px;
+        height: 180px;
+        margin: 10px;
+        border: 2px #2382F1 solid;
+        border-radius: 20px;
+        justify-content: center;
+    }
+   
+}
+
+@media(min-width: 1280px){
+
+}
