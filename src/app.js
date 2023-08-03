@@ -9,6 +9,11 @@ const rutasIncidentes = require ('./routes/rutasIncidentes.js')
 const publicPath = path.join(__dirname,'../public');
 app.use(express.static(publicPath));
 
+//seteo de ejs como motor de plantillas
+const viewsPath = path.join(__dirname,'/views');
+app.set('view engine','ejs');
+app.set('views',viewsPath);//le indico donde esta la carpeta views ya que no esta en la ubicacion por defecto que es la raiz del proyecto
+
 //definimos rutas
 
 app.use('/dependencias',rutasDependencias);
