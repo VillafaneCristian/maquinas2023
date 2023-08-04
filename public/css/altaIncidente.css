@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+.formulario-altaIncidente{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.formulario-altaIncidente-titulo{
+    text-align: center;
+}
+
+.formulario-altaIncidente-etiquetas{
+    display: block;
+}
+
+.formulario-altaIncidente-inputs{
+    width: 100%;
+    margin-bottom: 20px;
+}

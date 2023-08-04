@@ -1,6 +1,6 @@
 let incidentesController = {
     alta:function(req,res){
-        res.send('PAGINA DEL ALTA DE INCIDENTES');
+        res.render('altaIncidente.ejs');
 
     }
 }

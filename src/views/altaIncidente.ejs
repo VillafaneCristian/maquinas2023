@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/main-section-accesosDirectos.css">
+    <link rel="stylesheet" href="/css/altaIncidente.css">
+
     <title>Alta de incidentes</title>
 </head>
 <body>
-    <h1>ESTA ES LA PAGINA DEL ALTA DE LOS INCIDENTES</h1>
+    <%- include ('./partials/header.ejs') %>
+
+    <%- include ('./partials/accesosDirectos.ejs') %>
+
+    <form class="formulario-altaIncidente" action="#">
+        <h2 class="formulario-altaIncidente-titulo">ALTA DE INCIDENTE</h2>
+        <fieldset>
+            <legend>DATOS DEL USUARIO SOLICITANTE</legend>
+            <div>
+                <label class="formulario-altaIncidente-etiquetas" for="">NOMBRE:</label>
+                <input class="formulario-altaIncidente-inputs" type="text">
+            </div>
+            <div>
+                <label class="formulario-altaIncidente-etiquetas" for="">APELLIDO</label>
+                <input class="formulario-altaIncidente-inputs" type="text">
+            </div>
+            <div>
+                <label class="formulario-altaIncidente-etiquetas" for="">DEPENDENCIA: </label>
+                <input class="formulario-altaIncidente-inputs" type="text">
+            </div>
+     </fieldset>
+     <fieldset>
+        <legend>DATOS DEL PROBLEMA</legend>
+            <div>
+                <label class="formulario-altaIncidente-etiquetas" for="">TIPO DE EQUIPAMIENTO</label>
+                <input class="formulario-altaIncidente-inputs" type="text">
+            </div>
+            <div>
+                <label class="formulario-altaIncidente-etiquetas" for="">NOMBRE DE EQUIPAMIENTO</label>
+                <input class="formulario-altaIncidente-inputs" type="text">
+            </div>
+            <div>
+                <label for="" class="formulario-altaIncidente-etiquetas">DESCRIPCION:</label>
+                <textarea  class="formulario-altaIncidente-inputs" name="" id="" cols="30" rows="10"></textarea>
+            </div>
+     </fieldset>           
+            <div>
+                <fieldset>
+                    <legend>TIPO DE ASISTENCIA</legend>
+                    <label for="">Remota</label>
+                    <input type="radio" name="tipo-de-asistencia" value="remota">
+                    <label for="">Presencial</label>
+                    <input type="radio" name="tipo-de-asistencia" value="presencial">
+                </fieldset>
+            </div>
+            <div>
+                <button type="submit">CREAR</button>
+                <button type="reset">BORRAR</button>
+            </div>
+    </form>
 </body>
 </html>
