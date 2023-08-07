@@ -5,4 +5,6 @@ const dependenciasController = require ('../controllers/dependenciasController.j
 
 router.get('/alta',dependenciasController.alta);
 
+router.post('/alta',dependenciasController.crear); 
+
 module.exports = router; 

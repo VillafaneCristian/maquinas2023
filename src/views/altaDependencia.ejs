@@ -20,19 +20,19 @@
         
         <%- include('./partials/accesosDirectos.ejs') %>
 
-        <form action="#" method="POST" class="main-form-contenedor">
+        <form action="/dependencias/alta" method="POST" class="main-form-contenedor">
             <h2>ALTA DE DEPENDENCIA </h2>
             <div>
-                <label for="codigo" name="codigoDependencia" class="main-form-contenedor-label">CODIGO DEPENDENCIA</label>
-                <input type="text" class="main-form-contenedor-input">
+                <label for="codigo" class="main-form-contenedor-label">CODIGO DEPENDENCIA</label>
+                <input type="text" class="main-form-contenedor-input" name="codigoDependencia">
             </div>
             <div>
                 <label for="" class="main-form-contenedor-label">DEPENDENCIA</label>
-                <input type="text" class="main-form-contenedor-input">
+                <input type="text" class="main-form-contenedor-input" name="dependencia">
             </div>
             <div>
                 <label for="" class="main-form-contenedor-label">UBICACION</label>
-                <input type="text" class="main-form-contenedor-input">
+                <input type="text" class="main-form-contenedor-input" name="ubicacion">
             </div>
             <div>
                 <button type="submit">CREAR</button>
