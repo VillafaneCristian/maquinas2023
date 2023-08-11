@@ -1,5 +1,6 @@
 const path = require ('path');
 const fs = require ('fs');
+const {validationResult} = require ('express-validator'); 
 
 let dependenciasController = {
     alta: function(req,res){
@@ -7,7 +8,9 @@ let dependenciasController = {
         res.render('altaDependencia.ejs');
     },
     crear: function(req,res){
-        let dependenciaACrear = {
+        let errors = validationResult(req);
+        if (errors.isEmpty){
+        /*let dependenciaACrear = {
             codigoDependencia: req.body.codigoDependencia,
             dependencia: req.body.dependencia,
             ubicacion: req.body.ubicacion
@@ -29,7 +32,11 @@ let dependenciasController = {
 
         console.log(dependenciaACrear);
         
-        res.redirect('/incidentes/alta');
+        res.redirect('/incidentes/alta');*/
+
+        }
+
+        res.send(errors);
     }
 };
 

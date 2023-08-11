@@ -1,12 +1,17 @@
 [
-  {
-    "codigoDependencia": "fs1",
-    "dependencia": "sala 1",
-    "ubicacion": "1er piso"
-  },
-  {
-    "codigoDependencia": "f09",
-    "dependencia": "juzgado 9",
-    "ubicacion": "4to piso"
-  }
+    {
+        "codigoDependencia": "fs1",
+        "dependencia": "sala 1",
+        "ubicacion": "1er piso"
+    },
+    {
+        "codigoDependencia": "f09",
+        "dependencia": "juzgado 9",
+        "ubicacion": "4to piso"
+    },
+    {
+        "codigoDependencia": "f01",
+        "dependencia": "juzgado 1",
+        "ubicacion": "3er piso"
+    }
 ]
