@@ -4,6 +4,7 @@ const app = express();
 
 const rutasDependencias = require ('./routes/rutasDependencias.js');
 const rutasIncidentes = require ('./routes/rutasIncidentes.js')
+const rutasUsuarios = require ('./routes/rutasUsuarios.js');
 
 
 //definimos la carpeta public como carpeta de archivos publicos.
@@ -24,6 +25,7 @@ app.set('views',viewsPath);//le indico donde esta la carpeta views ya que no est
 //definimos rutas
 app.use('/dependencias',rutasDependencias);
 app.use('/incidentes',rutasIncidentes); 
+app.use('/usuarios',rutasUsuarios);
 
 //configuracion de la pagina que se va a mostrar cuando ocurra un error 404
 app.use((req, res, next) => {
@@ -31,5 +33,6 @@ app.use((req, res, next) => {
 });
 
 //levantamos el servidor en el puerto 3000
-app.listen(3000,()=>console.log('Servidor corriendo en el puerto 3000'));
+const PORT = 3000;
+app.listen(PORT,()=>console.log(`Servidor corriendo en el puerto ${PORT}`));
 

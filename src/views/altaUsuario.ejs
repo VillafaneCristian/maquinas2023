@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/main-section-accesosDirectos.css">
+    <link rel="stylesheet" href="/css/altaUsuarios.css">
+
+    <title>Alta de usuarios</title>
+</head>
+<body>
+    <main>
+        <%- include ('./partials/header.ejs') %>
+
+        <%- include('./partials/accesosDirectos.ejs') %>
+
+        <h1 class="titulo__altaUsuarios">ALTA DE USUARIOS</h1>
+
+        <form action="/usuarios/alta" method="post" class="formulario__usuarioAlta">
+            <div>
+                <label for="nombreUsuario" class="formulario__usuarioAlta__label">Nombre: </label>
+                <input type="text" id="nombreUsuario" name="nombreUsuario" class="formulario__usuarioAlta__input">
+            </div>
+            <div>
+                <label for="apellidoUsuario" class="formulario__usuarioAlta__label">Apellido: </label>
+                <input type="text" id="apellidoUsuario" name="apellidoUsuario" class="formulario__usuarioAlta__input">
+            </div>
+            <div>
+                <label for="emailUsuario" class="formulario__usuarioAlta__label">Email: </label>
+                <input type="email" id="emailUsuario" name="emailUsuario" class="formulario__usuarioAlta__input">
+            </div>
+            <div>
+                <label for="dependencia" class="formulario__usuarioAlta__label">Dependencia</label>
+                <select name="dependenciaUsuario" id="dependencia" class="formulario__usuarioAlta__select">
+                    <option value="f01">Juzgado 1</option>
+                    <option value="f02">Juzgado 2</option>
+                    <option value="f03">Juzgado 3</option>
+                    <option value="f04">Juzgado 4</option>
+                    <option value="f05">Juzgado 5</option>
+                    <option value="f06">Juzgado 6</option>
+                    <option value="f07">Juzgado 7</option>
+                    <option value="f08">Juzgado 8</option>
+                    <option value="f09">Juzgado 9</option>
+                    <option value="f10">Juzgado 10</option>
+                    <option value="f11">Juzgado 11</option>
+                    <option value="f12">Juzgado 12</option>
+                </select>
+            </div>
+            <div class="formulario__usuarioAlta__buttons">
+                <button type="submit">ENVIAR</button>
+                <button type="reset">BORRAR</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

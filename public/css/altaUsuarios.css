@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+.formulario__usuarioAlta{
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+.formulario__usuarioAlta__label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario__usuarioAlta__input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.formulario__usuarioAlta__buttons{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.formulario__usuarioAlta__select{
+    width: 100%;
+}
+
+.titulo__altaUsuarios{
+    text-align: center;
+}
