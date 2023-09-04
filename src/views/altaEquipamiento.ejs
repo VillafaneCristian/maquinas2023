@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/main-section-accesosDirectos.css">
+    <link rel="stylesheet" href="/css/altaEquipamiento.css">
+
+    <title>Alta Equipamiento</title>
+</head>
+<body>
+    <%- include ('./partials/header.ejs') %>
+
+    <%- include ('./partials/accesosDirectos.ejs') %>
+
+    <h1>ALTA EQUIPAMIENTO</h1>
+    <form action="/equipamiento/alta" method="post" >
+  
+        <div>
+            <label for="marcaEquipamiento">Marca:</label>
+            <input type="text" name="marcaEquipamiento" id="marcaEquipamiento">
+        </div>
+        <div>
+            <label for="modeloEquipamiento">Modelo:</label>
+            <input type="text" name="modeloEquipamiento" id="modeloEquipamiento">
+        </div>
+        <div>
+            <label for="tipoEquipamiento">Tipo de Equipamiento: </label>
+            <select name="tipoEquipamiento" id="tipoEquipamiento">
+                <option value="pc">PC</option>
+                <option value="impresora">Impresora</option>
+                <option value="escaner">Escaner</option>
+                <option value="monitor">Monitor</option>
+            </select>
+        </div>
+        <div>
+            <label for="procesadorPc">Procesador: </label>
+            <input type="text" id="procesadorPc" name="procesadorPc">
+        </div>
+        <div>
+            <label for="memoriaRamPc" id="memoriaRamPc">Memoria RAM:</label>
+            <input type="text" id="memoriaRamPc" name="memoriaRamPc">
+        </div>
+        <div>
+            <label for="discoRigidoPc">Disco Rigido: </label>
+            <input type="text" id="discoRigidoPc" name="discoRigidoPc">
+        </div>
+        <div>
+            <label for="">Lectograbadora de DVD: </label>
+            <label for="">Si</label>
+            <input type="radio" value="si" name="lectograbadoraPc">
+            <label for="">No</label>
+            <input type="radio" value="no" name="lectograbadoraPc">
+        </div>
+        <div>
+            <button type="submit">ENVIAR</button>
+            <button type="reset">BORRAR</button>
+        </div>
+    </form>
+</body>
+</html>

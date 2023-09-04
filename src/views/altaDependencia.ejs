@@ -21,7 +21,7 @@
         <%- include('./partials/accesosDirectos.ejs') %>
 
         <form action="/dependencias/alta" method="POST" class="main-form-contenedor">
-            <h2>ALTA DE DEPENDENCIA </h2>
+            <h1>ALTA DE DEPENDENCIA </h1>
             <div>
                 <label for="codigo" class="main-form-contenedor-label">CODIGO DEPENDENCIA</label>
                 <input type="text" class="main-form-contenedor-input" name="codigoDependencia">
@@ -32,7 +32,26 @@
             </div>
             <div>
                 <label for="" class="main-form-contenedor-label">UBICACION</label>
-                <input type="text" class="main-form-contenedor-input" name="ubicacion">
+                <label for="">Piso: </label>
+                <select name="piso">
+                    <option value="Subsuelo">Subsuelo</option>
+                    <option value="Planta baja">Planta baja</option>
+                    <option value="1er Piso">1er Piso</option>    
+                    <option value="2do Piso">2do Piso</option>
+                    <option value="3er Piso">3er Piso</option>
+                    <option value="4to Piso">4to Piso</option>
+                    <option value="5to Piso">5to Piso</option>
+                    <option value="6to Piso">6to Piso</option>
+                    <option value="7mo Piso">7mo Piso</option>
+                    <option value="8vo Piso">8vo Piso</option>
+                    <option value="9no Piso">9no Piso</option>
+                </select>
+                <label for="">Lado: </label>
+                <select name="lado">
+                    <option value="rio">Río</option>
+                    <option value="retiro">Retiro</option>
+                    <option value="medio">Medio</option>    
+                </select>
             </div>
             <div>
                 <button type="submit">CREAR</button>

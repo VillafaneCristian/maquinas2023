@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/main-section-accesosDirectos.css">
+    <link rel="stylesheet" href="/css/asignacionEquipamiento.css">
+
+
+    <title>Asignacion de equipamiento</title>
+</head>
+<body>
+        <%- include ('./partials/header.ejs') %>
+    
+        <%- include ('./partials/accesosDirectos.ejs') %>
+
+        <h1>ASIGNACION DE EQUIPAMIENTO</h1>
+
+        <form action="">
+            <div>
+                <label for="tipoEquipo">Tipo de equipo: </label>
+                <select name="tipoEquipo" id="tipoEquipo">
+                    <option value="pc">PC</option>
+                    <option value="impresora">Impresora</option>
+                    <option value="escaner">Escaner</option>
+                    <option value="monitor">Monitor</option>
+                </select>
+            </div>
+            <div>
+                <label for="nombreEquipo">Nombre del equipo: </label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Marca:</label>
+                <select name="marcaEquipo">
+                    <option value="lenovo">Lenovo</option>
+                    <option value="bangho">Bangho</option>
+                    <option value="hp">Hewlet Packard</option>
+                    <option value="sansei">Sansei</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Modelo: </label>
+                <select name="" id="">
+                    <option value="Optima T4">Optima T4</option>
+                    <option value="ZIVA">Ziva</option>
+                    <option value="Optima 1793">Optima 1793</option>
+                    <option value="Cross">Cross</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Dependencia: </label>
+                <select name="" id="">
+                    <option value="Juz1">Juzgado 1</option>
+                </select>
+            </div>
+        </form>
+</body>
+</html>

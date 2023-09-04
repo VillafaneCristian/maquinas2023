@@ -1,6 +1,6 @@
 const path = require ('path');
 const fs = require ('fs');
-const {validationResult} = require ('express-validator'); 
+
 
 let dependenciasController = {
     alta: function(req,res){
@@ -8,36 +8,30 @@ let dependenciasController = {
         res.render('altaDependencia.ejs');
     },
     crear: function(req,res){
-        let errors = validationResult(req);
-        if (errors.isEmpty){
-        /*let dependenciaACrear = {
+        let unaDependencia = {
             codigoDependencia: req.body.codigoDependencia,
             dependencia: req.body.dependencia,
-            ubicacion: req.body.ubicacion
+            ubicacion: req.body.piso + ', lado ' + req.body.lado
         }
-        const ubicacionArchivo = path.join(__dirname,'../database/dependencias.json');
-        let archivoDependencias = fs.readFileSync(ubicacionArchivo, {encoding: 'utf-8'}); 
-        let dependencias;
-        if (archivoDependencias == ""){
-            dependencias=[];
-        }else{
+
+       const archivoDependenciasPath = path.join(__dirname,'../database/dependencias.json'); 
+       let archivoDependencias = fs.readFileSync (archivoDependenciasPath,{encoding:'utf-8'});
+       let dependencias;
+       if (archivoDependencias == ""){
+            dependencias = [];
+       }else{
             dependencias = JSON.parse(archivoDependencias);
-        }
+       }
 
-        dependencias.push(dependenciaACrear); 
-
-        let dependenciasJSON = JSON.stringify(dependencias); 
-
-        fs.writeFileSync(ubicacionArchivo,dependenciasJSON);
-
-        console.log(dependenciaACrear);
+       dependencias.push(unaDependencia);
         
-        res.redirect('/incidentes/alta');*/
-
-        }
-
-        res.send(errors);
+       let dependenciasJSON = JSON.stringify(dependencias);
+       
+       fs.writeFileSync(archivoDependenciasPath,dependenciasJSON);
+       
+       res.redirect('/usuarios/alta');
     }
-};
+}
+
 
 module.exports = dependenciasController; 

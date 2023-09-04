@@ -1,0 +1,20 @@
+[
+    {
+        "marca": "Bangho",
+        "modelo": "T4",
+        "tipoEquipomiento": "pc",
+        "procesador": "AMD Ryzen 3",
+        "memoriaRam": "8 GB DDR4",
+        "discoRigido": "SSD 256 GB",
+        "lectograbadora": "no"
+    },
+    {
+        "marca": "SANSEI",
+        "modelo": "ANCI",
+        "tipoEquipomiento": "pc",
+        "procesador": "Intel I5",
+        "memoriaRam": "8 GB DDR4",
+        "discoRigido": "HDD 1TB",
+        "lectograbadora": "si"
+    }
+]

@@ -1,17 +1,12 @@
 [
     {
-        "codigoDependencia": "fs1",
-        "dependencia": "sala 1",
-        "ubicacion": "1er piso"
+        "codigoDependencia": "f01-sec2",
+        "dependencia": "juzgadoi 1, secretaria 2",
+        "ubicacion": "1er Piso, lado rio"
     },
     {
-        "codigoDependencia": "f09",
-        "dependencia": "juzgado 9",
-        "ubicacion": "4to piso"
-    },
-    {
-        "codigoDependencia": "f01",
-        "dependencia": "juzgado 1",
-        "ubicacion": "3er piso"
+        "codigoDependencia": "f11-sec21",
+        "dependencia": "juzgado 11 secretaria 22",
+        "ubicacion": "4to Piso, lado retiro"
     }
 ]

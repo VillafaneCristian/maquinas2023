@@ -5,6 +5,7 @@ const app = express();
 const rutasDependencias = require ('./routes/rutasDependencias.js');
 const rutasIncidentes = require ('./routes/rutasIncidentes.js')
 const rutasUsuarios = require ('./routes/rutasUsuarios.js');
+const rutasEquipamiento = require ('./routes/rutasEquipamiento.js');
 
 
 //definimos la carpeta public como carpeta de archivos publicos.
@@ -26,6 +27,7 @@ app.set('views',viewsPath);//le indico donde esta la carpeta views ya que no est
 app.use('/dependencias',rutasDependencias);
 app.use('/incidentes',rutasIncidentes); 
 app.use('/usuarios',rutasUsuarios);
+app.use('/equipamiento',rutasEquipamiento);
 
 //configuracion de la pagina que se va a mostrar cuando ocurra un error 404
 app.use((req, res, next) => {
