@@ -21,10 +21,10 @@
         <%- include('./partials/accesosDirectos.ejs') %>
 
         <form action="/dependencias/alta" method="POST" class="main-form-contenedor">
-            <h1>ALTA DE DEPENDENCIA </h1>
+            <h1>EDICION DE DEPENDENCIA </h1>
             <div>
                 <label for="codigo" class="main-form-contenedor-label">CODIGO DEPENDENCIA</label>
-                <input type="text" class="main-form-contenedor-input" name="codigo">
+                <input type="text" class="main-form-contenedor-input" name="codigo" value="<%= dependencia">
             </div>
             <div>
                 <label for="" class="main-form-contenedor-label">DEPENDENCIA</label>

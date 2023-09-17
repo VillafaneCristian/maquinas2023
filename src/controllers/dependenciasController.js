@@ -1,5 +1,4 @@
-const path = require ('path');
-const fs = require ('fs');
+const dependenciasServicios = require ('../services/dependenciasServices.js');
 
 
 let dependenciasController = {
@@ -8,29 +7,25 @@ let dependenciasController = {
         res.render('altaDependencia.ejs');
     },
     crear: function(req,res){
-        let unaDependencia = {
-            codigoDependencia: req.body.codigoDependencia,
-            dependencia: req.body.dependencia,
-            ubicacion: req.body.piso + ', lado ' + req.body.lado
-        }
-
-       const archivoDependenciasPath = path.join(__dirname,'../database/dependencias.json'); 
-       let archivoDependencias = fs.readFileSync (archivoDependenciasPath,{encoding:'utf-8'});
-       let dependencias;
-       if (archivoDependencias == ""){
-            dependencias = [];
-       }else{
-            dependencias = JSON.parse(archivoDependencias);
-       }
-
-       dependencias.push(unaDependencia);
-        
-       let dependenciasJSON = JSON.stringify(dependencias);
-       
-       fs.writeFileSync(archivoDependenciasPath,dependenciasJSON);
-       
+       const dependencia = {
+        codigo: req.body.codigo,
+        nombre: req.body.nombre,
+        ubicacion: req.body.piso + ' , lado ' + req.body.lado,
+       };
+       dependenciasServicios.crear(dependencia);
        res.redirect('/usuarios/alta');
-    }
+    },
+    listar: function(req,res){
+        const dependencias = dependenciasServicios.getAllDependencias();
+        res.render('listarDependencias.ejs',{dependencias});
+    },
+    
+    editar: function (req,res){
+        const id = req.params.id;
+        const dependencia = dependenciasServicios.getDependenciaById(id);
+        res.send(dependencia);
+        //res.render('edicionDependencia.ejs')
+    }    
 }
 
 

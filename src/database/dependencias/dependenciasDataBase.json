@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1fbaa7f1-2276-4da3-8c46-a4a57c610d00",
+    "codigo": "nuevadep",
+    "nombre": "nueva dep",
+    "ubicacion": "2do Piso , lado rio"
+  },
+  {
+    "id": "ec194948-b4b9-4423-9a04-67ce3c6863f0",
+    "codigo": "hola",
+    "nombre": "hola",
+    "ubicacion": "7mo Piso , lado rio"
+  },
+  {
+    "id": "5a3676f4-5dc2-418e-82cc-3e8319865516",
+    "codigo": "prueba",
+    "nombre": "prueba",
+    "ubicacion": "4to Piso , lado medio"
+  },
+  {
+    "id": "52895b67-fc70-49b2-8d41-4812d2460a9c",
+    "codigo": "nueva",
+    "nombre": "hola",
+    "ubicacion": "5to Piso , lado rio"
+  }
+]
