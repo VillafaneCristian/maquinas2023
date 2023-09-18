@@ -10,7 +10,8 @@
     <h1>EDICION DE DEPENDENCIA</h1>
     <% dependencias.forEach((dependencia)=>{ %>
         <%= dependencia.nombre %>
-        <%= dependencia.ubicacion%>
+        <%= dependencia.piso%>
+        <%= dependencia.lado%>
         <a href="/dependencias/editar/<%= dependencia.id %>">EDITAR</a>
         <form action="">
             <button type="button">ELIMINAR</button>

@@ -9,5 +9,6 @@ router.post('/alta',dependenciasController.crear);
 router.get('/listar',dependenciasController.listar);
 
 router.get('/editar/:id',dependenciasController.editar); 
+router.put('/editar/:id',dependenciasController.actualizar);
 
 module.exports = router; 

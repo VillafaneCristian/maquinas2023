@@ -20,41 +20,41 @@
         
         <%- include('./partials/accesosDirectos.ejs') %>
 
-        <form action="/dependencias/alta" method="POST" class="main-form-contenedor">
+        <form action="/dependencias/editar/<%=dependencia.id%>?_method=PUT" method="POST" class="main-form-contenedor">
             <h1>EDICION DE DEPENDENCIA </h1>
             <div>
                 <label for="codigo" class="main-form-contenedor-label">CODIGO DEPENDENCIA</label>
-                <input type="text" class="main-form-contenedor-input" name="codigo" value="<%= dependencia">
+                <input type="text" class="main-form-contenedor-input" name="codigo" value="<%= dependencia.codigo%>">
             </div>
             <div>
                 <label for="" class="main-form-contenedor-label">DEPENDENCIA</label>
-                <input type="text" class="main-form-contenedor-input" name="nombre">
+                <input type="text" class="main-form-contenedor-input" name="nombre" value="<%= dependencia.nombre %>">
             </div>
             <div>
                 <label for="" class="main-form-contenedor-label">UBICACION</label>
                 <label for="">Piso: </label>
                 <select name="piso">
-                    <option value="Subsuelo">Subsuelo</option>
-                    <option value="Planta baja">Planta baja</option>
-                    <option value="1er Piso">1er Piso</option>    
-                    <option value="2do Piso">2do Piso</option>
-                    <option value="3er Piso">3er Piso</option>
-                    <option value="4to Piso">4to Piso</option>
-                    <option value="5to Piso">5to Piso</option>
-                    <option value="6to Piso">6to Piso</option>
-                    <option value="7mo Piso">7mo Piso</option>
-                    <option value="8vo Piso">8vo Piso</option>
-                    <option value="9no Piso">9no Piso</option>
+                    <option value="Subsuelo" <%= dependencia.piso ? "selected":""%>>Subsuelo</option>
+                    <option value="Planta baja" <%= dependencia.piso ? "selected":""%>>Planta baja</option>
+                    <option value="1er Piso" <%= dependencia.piso ? "selected":""%>>1er Piso</option>    
+                    <option value="2do Piso" <%= dependencia.piso ? "selected":""%>>2do Piso</option>
+                    <option value="3er Piso" <%= dependencia.piso ? "selected":""%>>3er Piso</option>
+                    <option value="4to Piso" <%= dependencia.piso ? "selected":""%>>4to Piso</option>
+                    <option value="5to Piso" <%= dependencia.piso ? "selected":""%>>5to Piso</option>
+                    <option value="6to Piso" <%= dependencia.piso ? "selected":""%>>6to Piso</option>
+                    <option value="7mo Piso" <%= dependencia.piso ? "selected":""%>>7mo Piso</option>
+                    <option value="8vo Piso" <%= dependencia.piso ? "selected":""%>>8vo Piso</option>
+                    <option value="9no Piso" <%= dependencia.piso ? "selected":""%>>9no Piso</option>
                 </select>
                 <label for="">Lado: </label>
                 <select name="lado">
-                    <option value="rio">Río</option>
-                    <option value="retiro">Retiro</option>
-                    <option value="medio">Medio</option>    
+                    <option value="rio" <%= dependencia.lado ? "selected":""%>>Río</option>
+                    <option value="retiro" <%= dependencia.lado ? "selected":""%>>Retiro</option>
+                    <option value="medio" <%= dependencia.lado ? "selected":""%>>Medio</option>    
                 </select>
             </div>
             <div>
-                <button type="submit">CREAR</button>
+                <button type="submit">GUARDAR</button>
                 <button type="reset">BORRAR</button>
             </div>
 

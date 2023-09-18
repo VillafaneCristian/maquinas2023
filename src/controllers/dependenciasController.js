@@ -10,7 +10,8 @@ let dependenciasController = {
        const dependencia = {
         codigo: req.body.codigo,
         nombre: req.body.nombre,
-        ubicacion: req.body.piso + ' , lado ' + req.body.lado,
+        piso: req.body.piso, 
+        lado: req.body.lado,
        };
        dependenciasServicios.crear(dependencia);
        res.redirect('/usuarios/alta');
@@ -23,8 +24,13 @@ let dependenciasController = {
     editar: function (req,res){
         const id = req.params.id;
         const dependencia = dependenciasServicios.getDependenciaById(id);
-        res.send(dependencia);
-        //res.render('edicionDependencia.ejs')
+        res.render('edicionDependencia.ejs',{dependencia});
+    },
+    actualizar: function(req,res){
+        const dependencia = req.body;
+        const id = req.params.id;
+        dependenciasServicios.update(id,dependencia);
+        res.redirect('/dependencias/listar');
     }    
 }
 

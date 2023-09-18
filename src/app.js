@@ -1,6 +1,7 @@
 const express = require ('express');
 const path = require ('path');
 const app = express();
+const methodOverride = require ('method-override');
 
 const rutasDependencias = require ('./routes/rutasDependencias.js');
 const rutasIncidentes = require ('./routes/rutasIncidentes.js')
@@ -21,6 +22,9 @@ app.use(express.json());
 const viewsPath = path.join(__dirname,'/views');
 app.set('view engine','ejs');
 app.set('views',viewsPath);//le indico donde esta la carpeta views ya que no esta en la ubicacion por defecto que es la raiz del proyecto
+
+//configuramos la aplicacion para poder usar los metodos PUT y DELETE
+app.use (methodOverride('_method'));
 
 
 //definimos rutas

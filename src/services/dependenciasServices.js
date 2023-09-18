@@ -11,6 +11,10 @@ const  dependenciasServices = {
 
     crear: (dependencia)  => {
         db.dependencias.crear(dependencia);
+    },
+
+    update: (id,dependencia) =>{
+        db.dependencias.update(id,dependencia);
     }
 
 };

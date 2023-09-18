@@ -32,6 +32,12 @@ module.exports = {
     dependencias.push(unaDependencia);
     //guardo el nuevo arrary en el archivo
     this.saveDependencia(dependencias);
+    },
+    update: function(id,dependencia){
+        const dependencias = this.getAllDependencias();
+        const dependenciaAEditar = dependencias.find((dependencia)=>id==dependencia.id); 
+        Object.assign(dependenciaAEditar,dependencia);
+        this.saveDependencia(dependencias);
     }
 
 };
