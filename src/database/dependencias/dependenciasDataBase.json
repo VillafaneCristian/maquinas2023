@@ -1,9 +1,51 @@
 [
   {
     "id": "29fd6439-b256-4895-96dc-e62ff53ebd60",
-    "codigo": "nueva ",
-    "nombre": "nuevadep ",
-    "piso": "4to Piso",
+    "codigo": "v06",
+    "nombre": "Vocalia 6",
+    "piso": "1er Piso",
+    "lado": "rio"
+  },
+  {
+    "id": "759615ec-2179-49cf-99d9-844e0fde2093",
+    "codigo": "v08",
+    "nombre": "Vocalia 8",
+    "piso": "8vo Piso",
+    "lado": "medio"
+  },
+  {
+    "id": "8d585879-c8b5-4c18-8e43-b5948c0fa55b",
+    "codigo": "v09",
+    "nombre": "Vocalia 9",
+    "piso": "3er Piso",
+    "lado": "medio"
+  },
+  {
+    "id": "ab46a7ab-5bf4-441b-b96c-58c1ec39fbc1",
+    "codigo": "v10",
+    "nombre": "vocalia 10",
+    "piso": "1er Piso",
+    "lado": "retiro"
+  },
+  {
+    "id": "ac39a521-dae4-4789-94be-188e573b4008",
+    "codigo": "v11",
+    "nombre": "Vocalia 11",
+    "piso": "1er Piso",
+    "lado": "rio"
+  },
+  {
+    "id": "97304b94-2bf6-480a-8f53-7739fbf76b0f",
+    "codigo": "v12",
+    "nombre": "vocalia 12",
+    "piso": "6to Piso",
+    "lado": "medio"
+  },
+  {
+    "id": "913808b1-3f9f-4320-a18a-c0bc2b779c11",
+    "codigo": "v04",
+    "nombre": "vocalia 4",
+    "piso": "5to Piso",
     "lado": "medio"
   }
 ]

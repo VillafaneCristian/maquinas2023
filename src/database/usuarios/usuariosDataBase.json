@@ -1,0 +1,45 @@
+[
+  {
+    "nombre": "Diego",
+    "apellido": "Alonso",
+    "email": "diego@gmail.com",
+    "dependencia": "f01"
+  },
+  {
+    "nombre": "marcos ",
+    "apellido": "lopez",
+    "email": "marcos@gmail.com",
+    "dependencia": "f08"
+  },
+  {
+    "nombre": "laura",
+    "apellido": "vera",
+    "email": "lauravera@pjn.gov.ar",
+    "dependencia": "f05"
+  },
+  {
+    "nombre": "CAMILA",
+    "apellido": "BERMUDEZ",
+    "email": "CAMILA@PJN.GOV.AR",
+    "dependencia": "f11"
+  },
+  {
+    "nombre": "CARLOS",
+    "apellido": "RODRIGUEZ",
+    "email": "CARLOS@PJN.GOV.AR",
+    "dependencia": "f11"
+  },
+  {
+    "nombre": "hector ",
+    "apellido": "campos",
+    "email": "campos@gmail.com",
+    "dependencia": "f08"
+  },
+  {
+    "id": "78c94a72-405d-43fb-8a0d-fcbbbd54d2c5",
+    "nombre": "lucas",
+    "apellido": "lucas",
+    "email": "lucas@lucas",
+    "dependencia": "f05"
+  }
+]

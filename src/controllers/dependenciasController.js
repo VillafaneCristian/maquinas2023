@@ -4,7 +4,7 @@ const dependenciasServicios = require ('../services/dependenciasServices.js');
 let dependenciasController = {
     alta: function(req,res){
         //const altaIncidentePath = path.resolve(__dirname,'../views/altaDependencia.ejs');
-        res.render('altaDependencia.ejs');
+        res.render('dependencias/altaDependencia.ejs');
     },
     crear: function(req,res){
        const dependencia = {
@@ -18,13 +18,13 @@ let dependenciasController = {
     },
     listar: function(req,res){
         const dependencias = dependenciasServicios.getAllDependencias();
-        res.render('listarDependencias.ejs',{dependencias});
+        res.render('dependencias/listarDependencias.ejs',{dependencias});
     },
     
     editar: function (req,res){
         const id = req.params.id;
         const dependencia = dependenciasServicios.getDependenciaById(id);
-        res.render('edicionDependencia.ejs',{dependencia});
+        res.render('dependencias/edicionDependencia.ejs',{dependencia});
     },
     actualizar: function(req,res){
         const dependencia = req.body;

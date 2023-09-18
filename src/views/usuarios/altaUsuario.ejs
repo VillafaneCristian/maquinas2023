@@ -13,28 +13,28 @@
 </head>
 <body>
     <main>
-        <%- include ('./partials/header.ejs') %>
+        <%- include ('../partials/header.ejs') %>
 
-        <%- include('./partials/accesosDirectos.ejs') %>
+        <%- include('../partials/accesosDirectos.ejs') %>
 
         <h1 class="titulo__altaUsuarios">ALTA DE USUARIOS</h1>
 
         <form action="/usuarios/alta" method="post" class="formulario__usuarioAlta">
             <div>
                 <label for="nombreUsuario" class="formulario__usuarioAlta__label">Nombre: </label>
-                <input type="text" id="nombreUsuario" name="nombreUsuario" class="formulario__usuarioAlta__input">
+                <input type="text" id="nombreUsuario" name="nombre" class="formulario__usuarioAlta__input">
             </div>
             <div>
                 <label for="apellidoUsuario" class="formulario__usuarioAlta__label">Apellido: </label>
-                <input type="text" id="apellidoUsuario" name="apellidoUsuario" class="formulario__usuarioAlta__input">
+                <input type="text" id="apellidoUsuario" name="apellido" class="formulario__usuarioAlta__input">
             </div>
             <div>
                 <label for="emailUsuario" class="formulario__usuarioAlta__label">Email: </label>
-                <input type="email" id="emailUsuario" name="emailUsuario" class="formulario__usuarioAlta__input">
+                <input type="email" id="emailUsuario" name="email" class="formulario__usuarioAlta__input">
             </div>
             <div>
                 <label for="dependencia" class="formulario__usuarioAlta__label">Dependencia</label>
-                <select name="dependenciaUsuario" id="dependencia" class="formulario__usuarioAlta__select">
+                <select name="dependencia" id="dependencia" class="formulario__usuarioAlta__select">
                     <option value="f01">Juzgado 1</option>
                     <option value="f02">Juzgado 2</option>
                     <option value="f03">Juzgado 3</option>

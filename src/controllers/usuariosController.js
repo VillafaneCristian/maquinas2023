@@ -1,36 +1,24 @@
 const fs = require ('fs');
 const path = require('path');
+const usuariosServices = require ('../services/usuariosServices.js');
 
 const usuariosController = {
     alta: function(req,res){
-        res.render('altausuario.ejs'); 
+        res.render('usuarios/altausuario.ejs'); 
     },
     crear: function(req,res){
+        //recibir la informacion desde el formulario y almacenarla en uan variable
+        const usuario = {
+            nombre: req.body.nombre,
+            apellido: req.body.apellido,
+            email: req.body.email,
+            dependencia: req.body.dependencia  
+        };
 
-        let unUsuario = {
-            nombre: req.body.nombreUsuario,
-            apellido: req.body.apellidoUsuario,
-            email: req.body.emailUsuario,
-            dependencia: req.body.dependenciaUsuario
-        }
-
-
-        const archivoUsuariosPath = path.join(__dirname,'../database/usuarios.json');
-        let archivoUsuarios = fs.readFileSync(archivoUsuariosPath,{encoding:'utf-8'});
-        let usuarios;
-        if (archivoUsuarios == ""){
-            usuarios=[];
-        }else{
-            usuarios = JSON.parse(archivoUsuarios);
-        }
-
-        usuarios.push(unUsuario);
-
-        usuariosJSON = JSON.stringify (usuarios);
-
-        fs.writeFileSync(archivoUsuariosPath,usuariosJSON);
-
-        res.redirect('/incidentes/alta')
+        //pasarle esa variable al servicio
+        usuariosServices.crear(usuario);
+        //redireccionar la pagina
+        res.send(usuario);
     }
 }
 
