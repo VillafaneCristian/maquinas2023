@@ -14,6 +14,10 @@ const usuarios = {
         fs.writeFileSync(archivoUsuariosPath,JSON.stringify(usuarios,null,2));
     },
 
+    findAllUsers: function(){
+        return this.getAllUsuarios();
+    },
+
     crear: function(usuario) {
     //obtener todos los productos en una variable
     const usuarios = this.getAllUsuarios();

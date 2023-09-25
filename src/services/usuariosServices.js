@@ -4,6 +4,10 @@ const usuariosServices = {
 
     crear: (usuario)=>{
         db.usuarios.crear(usuario);
+    },
+
+    getAllUsers: ()=>{
+        return db.usuarios.findAllUsers();
     }
 }
 

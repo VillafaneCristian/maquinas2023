@@ -19,6 +19,16 @@ const usuariosController = {
         usuariosServices.crear(usuario);
         //redireccionar la pagina
         res.send(usuario);
+    },
+
+    listar: function (req,res){
+        const usuarios = usuariosServices.getAllUsers();
+        console.log(usuarios);
+        res.render('usuarios/listarUsuarios.ejs', {usuarios:usuarios}); 
+    },
+
+    userEditForm: function (req,res){
+        res.render('usuarios/editarUsuario.ejs');
     }
 }
 

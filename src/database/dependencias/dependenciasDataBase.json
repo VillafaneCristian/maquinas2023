@@ -37,14 +37,28 @@
   {
     "id": "97304b94-2bf6-480a-8f53-7739fbf76b0f",
     "codigo": "v12",
-    "nombre": "vocalia 12",
-    "piso": "6to Piso",
+    "nombre": "vocalia 12 nueva",
+    "piso": "9no Piso",
     "lado": "medio"
   },
   {
     "id": "913808b1-3f9f-4320-a18a-c0bc2b779c11",
     "codigo": "v04",
     "nombre": "vocalia 4",
+    "piso": "5to Piso",
+    "lado": "medio"
+  },
+  {
+    "id": "9ccd8475-5685-41d1-9ee1-d5d3c2acf92b",
+    "codigo": "v02",
+    "nombre": "vocalia 02",
+    "piso": "1er Piso",
+    "lado": "retiro"
+  },
+  {
+    "id": "2c9d7f80-62fb-42d7-8e31-8d647d6e0a9e",
+    "codigo": "f02",
+    "nombre": "juzgado 2",
     "piso": "5to Piso",
     "lado": "medio"
   }
