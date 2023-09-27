@@ -19,18 +19,34 @@
 
         <h1 class="titulo__altaUsuarios">EDICION DE USUARIOS</h1>
 
+        
         <form action="/usuarios/alta" method="post" class="formulario__usuarioAlta">
             <div>
                 <label for="nombreUsuario" class="formulario__usuarioAlta__label">Nombre: </label>
-                <input type="text" id="nombreUsuario" name="nombre" class="formulario__usuarioAlta__input">
+                <input 
+                    type="text" 
+                    id="nombreUsuario" 
+                    name="nombre" 
+                    class="formulario__usuarioAlta__input"
+                    value="<%=userToEdit.nombre%>">
             </div>
             <div>
                 <label for="apellidoUsuario" class="formulario__usuarioAlta__label">Apellido: </label>
-                <input type="text" id="apellidoUsuario" name="apellido" class="formulario__usuarioAlta__input">
+                <input 
+                    type="text"
+                    id="apellidoUsuario"
+                    name="apellido"
+                    class="formulario__usuarioAlta__input"
+                    value="<%=userToEdit.apellido%>">
             </div>
             <div>
                 <label for="emailUsuario" class="formulario__usuarioAlta__label">Email: </label>
-                <input type="email" id="emailUsuario" name="email" class="formulario__usuarioAlta__input">
+                <input 
+                    type="email" 
+                    id="emailUsuario" 
+                    name="email" 
+                    class="formulario__usuarioAlta__input"
+                    value="<%=userToEdit.email%>">
             </div>
             <div>
                 <label for="dependencia" class="formulario__usuarioAlta__label">Dependencia</label>

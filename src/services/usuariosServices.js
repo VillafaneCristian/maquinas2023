@@ -1,4 +1,5 @@
 const db = require ('../database/db.js');
+const { findById } = require('../database/dependencias/dependencias.js');
 
 const usuariosServices = {
 
@@ -8,7 +9,12 @@ const usuariosServices = {
 
     getAllUsers: ()=>{
         return db.usuarios.findAllUsers();
-    }
+    },
+
+    getUserById: (id)=>{
+        const usertoEdit = db.usuarios.findUserById(id);
+        return usertoEdit;
+    } 
 }
 
 module.exports = usuariosServices;

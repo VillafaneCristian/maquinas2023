@@ -18,6 +18,12 @@ const usuarios = {
         return this.getAllUsuarios();
     },
 
+    findUserById: function(id){
+        const usuarios = this.getAllUsuarios();
+        const usuario = usuarios.find((usuario)=>usuario.id == id);
+        return usuario;
+    },
+
     crear: function(usuario) {
     //obtener todos los productos en una variable
     const usuarios = this.getAllUsuarios();

@@ -12,5 +12,12 @@
     "apellido": "colombres",
     "email": "lucas@pjn.gov.ar",
     "dependencia": "f04"
+  },
+  {
+    "id": "048f8938-53e6-4285-a3b0-da893f55d4f0",
+    "nombre": "Laura",
+    "apellido": "Vera",
+    "email": "laura@pjn.gov.ar",
+    "dependencia": "f04"
   }
 ]

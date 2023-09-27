@@ -23,12 +23,13 @@ const usuariosController = {
 
     listar: function (req,res){
         const usuarios = usuariosServices.getAllUsers();
-        console.log(usuarios);
         res.render('usuarios/listarUsuarios.ejs', {usuarios:usuarios}); 
     },
 
-    userEditForm: function (req,res){
-        res.render('usuarios/editarUsuario.ejs');
+    editar: function (req,res){
+        const id = req.params.id;
+        const userToEdit = usuariosServices.getUserById(id);
+        res.render('usuarios/editarUsuario.ejs',{userToEdit:userToEdit});
     }
 }
 
